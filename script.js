@@ -44,11 +44,11 @@ function generatePassword() {
   }
   chars = chars.split("");
   let pw = ""
-  console.log(chars)
+ // console.log(chars)
   for (let i = 0; i<length&&i<128; i++) {
     const index = Math.floor(Math.random() * chars.length);
     let char = chars[index];
-    console.log (char)
+    //console.log (char)
     pw = pw.concat(char);
   }
   return pw;
